@@ -23,7 +23,7 @@ jobs:
           files: "**.png"
           separator: "\n"
           old_new_files_separator: "\n"
-          old_new_separator: "->"
+          old_new_separator: " -> "
       - if: steps.changed-files.outputs.any_modified == 'true'
         name: Run Pre Commands
         env:
